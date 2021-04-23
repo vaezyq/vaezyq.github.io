@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      “边缘计算” | Blog
+      第二章答案 | Blog
     
   </title>
   <meta name="author" content="vae">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「“边缘计算”」
+			「第二章答案」
 		
 	</p>
 
@@ -242,8 +242,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2021/04/21/%E2%80%9C%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E2%80%9D/" itemprop="url">
-		“边缘计算”
+	<a href="/2021/04/23/%E7%AC%AC%E4%BA%8C%E7%AB%A0%E7%AD%94%E6%A1%88/" itemprop="url">
+		第二章答案
 	</a>
 
 		</div>
@@ -259,9 +259,9 @@
 
 	Updated on
 
-	<a href="/2021/04/21/%E2%80%9C%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E2%80%9D/" itemprop="url">
-		<time datetime="2021-04-21T07:21:03.000Z" itemprop="dateUpdated">
-	  		2021-04-21
+	<a href="/2021/04/23/%E7%AC%AC%E4%BA%8C%E7%AB%A0%E7%AD%94%E6%A1%88/" itemprop="url">
+		<time datetime="2021-04-23T15:16:35.000Z" itemprop="dateUpdated">
+	  		2021-04-23
 	  </time>
 	</a> 
 
@@ -272,8 +272,12 @@
 				
 	<i class="icon-price-tags"></i>
 	
-		<a href="/tags/%E6%AF%95%E8%AE%BE/" class=" ">
-			毕设
+		<a href="/tags/python/" class=" ">
+			python
+		</a>
+	
+		<a href="/tags/python%E7%BC%96%E7%A8%8B%E7%AD%94%E6%A1%88/" class=" ">
+			python编程答案
 		</a>
 	
 		
@@ -286,88 +290,50 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h3 id="任务调度和容错相关工作总结"><a href="#任务调度和容错相关工作总结" class="headerlink" title="任务调度和容错相关工作总结"></a>任务调度和容错相关工作总结</h3><table>
-<thead>
-<tr>
-<th align="center">任务调度</th>
-<th align="center">任务调度</th>
-<th align="center">任务粒度</th>
-<th align="center">容错</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">OnDisc算法，Dedas算法，SDTO算法,Min-Min算法</td>
-<td align="center">有</td>
-<td align="center">独立任务</td>
-<td align="center">无</td>
-</tr>
-<tr>
-<td align="center">HEFT算法，TDCA算法，ITAGS算法</td>
-<td align="center">有</td>
-<td align="center">DAG</td>
-<td align="center">无</td>
-</tr>
-<tr>
-<td align="center">S Ghosh，MOSSE D</td>
-<td align="center">有</td>
-<td align="center">独立任务</td>
-<td align="center">有</td>
-</tr>
-<tr>
-<td align="center">本研究工作</td>
-<td align="center">有</td>
-<td align="center">DAG</td>
-<td align="center">有</td>
-</tr>
-</tbody></table>
-<p><strong>OnDisc算法：</strong></p>
-<ul>
-<li>在移动设备附近部署一组边缘服务器，作业在移动设备上以任意的顺序和时间生成，其目标是最小化所有作业的总加权响应时间（Online Job Dispatching and Scheduling in Edge-Clouds）</li>
-</ul>
-<p><strong>Dedas算法</strong></p>
-<ul>
-<li>此算法针对边缘计算中具有截止时间的在线任务调度问题。考虑在网络带宽和计算资源有限的条件下，满足最大数量任务的最后期限。提出了Dedas算法，该算法贪婪地调度新到达的任务，并考虑是否替换现有的任务以满足新任务的最后期限。</li>
-</ul>
-<p><strong>SDTO算法</strong></p>
-<ul>
-<li>此算法利用软件定义网络的思想，研究了超密集网络中的任务卸载问题，以最小化延迟，同时节省用户设备的电池寿命。具体地说，其将任务卸载问题表述为一个具有np困难的混合整数非线性规划。为了解决这一问题，此算法将这一优化问题转化为两个子问题，即任务分配子问题和资源分配子问题。</li>
-</ul>
-<p><strong>LODCO算法</strong></p>
-<ul>
-<li>由于设备上的电池容量有限，当电池能量耗尽时，计算会中断。为了提供令人满意的计算性能和实现绿色计算，此算法提出了一种有效的计算卸载策略。同时考虑了执行延迟和任务失败的执行成本作为性能指标。提出了一种低复杂度的在线算法，即基于李雅普诺夫优化的动态计算卸载(LODCO)算法。</li>
-</ul>
-<hr>
-<p><strong>TDCA算法</strong></p>
-<ul>
-<li>此算法通过有向无环图(DAG)对具有一组分布式任务的调度应用程序进行建模。目标是将任务分配给不同的处理器，以便整个应用程序能够尽快完成。基于任务复制(TDB)方案是解决这个问题的一种重要技术。其主要思想是在多台机器上复制任务，以便重复任务的结果可以在多台机器上使用，以计算时间换取通信时间。</li>
-</ul>
-<p><strong>ITAGS算法</strong></p>
-<ul>
-<li>在一个由异构本地处理器和远程云服务器组成的通用云计算系统中，此算法针对由依赖任务组成的应用程序的调度决策。此算法找出最优的卸载决策，使整个应用程序的执行成本最小，并受应用程序完成期限的限制。为了得到一个有效的解，采用的启发式算法，即个体时间分配与贪婪调度(ITAGS)。ITAGS首先使用原问题的二进制放松版本为每个任务分配一个完成期限，然后在时间允许的情况下贪婪地优化每个任务的调度。</li>
-</ul>
-<hr>
-<p><strong>Fault-tolerant scheduling on a hard real-time multiprocessor system</strong></p>
-<ul>
-<li>容错是硬实时系统中的一个重要问题。提供容错的一种方法是在不同的处理器上调度任务的多个副本。当任务的主副本因故障无法完成时，定时备份副本将运行，任务完成。本文提出了一种新的多处理器系统容错调度算法。该算法保证了在处理器出现故障的情况下，计划任务在其截止日期之前完成。我们的算法调度几个相互重叠的备份任务，一旦原始任务完成执行，就动态地释放备份，从而增加处理器的利用率。</li>
-</ul>
-<p><strong>Fault-tolerance through scheduling of aperiodic tasks in hard real-time multiprocessor systems</strong></p>
-<ul>
-<li>实时系统正越来越多地应用于一些对时间至关重要的应用中。容错是此类系统的一项重要要求，此算法在系统中调度多个动态的、非周期的、非抢占式的任务副本，并使用两种技术，我们称之为回收和超载，以实现较高的接受率(系统调度任务到达的百分比)。</li>
-</ul>
-<h3 id="边缘计算容错系统的过程"><a href="#边缘计算容错系统的过程" class="headerlink" title="边缘计算容错系统的过程"></a>边缘计算容错系统的过程</h3><h4 id="第一步-用户发出任务请求"><a href="#第一步-用户发出任务请求" class="headerlink" title="第一步 用户发出任务请求"></a>第一步 用户发出任务请求</h4><p>由手机等应用发起的请求即为任务，即如图所示：</p>
-<img src="C:\Users\白茶\AppData\Roaming\Typora\typora-user-images\image-20210318173707502.png" alt="image-20210318173707502" style="zoom: 67%;" />
+			<h3 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    msg = <span class="string">&quot;hello&quot;</span></span><br><span class="line">    <span class="built_in">print</span>(msg)</span><br></pre></td></tr></table></figure>
 
 
 
-<p>任务以有向无环图的形式展现</p>
-<ul>
-<li>由开发人员构建的应用程序通常由多个独立的功能模块按照一定的逻辑关系组建的。上图展示了一个来自 Facebook的视频处理应用程序的功能图，其中多个相关功能共同构成视频分类计算应用程序。</li>
-<li>我们把用户对应用的一次请求建模成一个带权重的有向无环图（DAG），也称为应用任务图。顾名思义，任务图中每个节点代表一个独立的任务，也就是对某功能的一次运行请求。应用的任何一个任务图与该应用程序的功能图具有样的拓扑结构，但任务图中还携带有向边的权重信息，也就是相关任务间传输的数据量大小，以及等等的信息。</li>
-</ul>
+<h3 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    msg = <span class="string">&quot;hello&quot;</span></span><br><span class="line">    <span class="built_in">print</span>(msg)</span><br><span class="line">    msg = <span class="string">&#x27;world&#x27;</span></span><br><span class="line">    <span class="built_in">print</span>(msg)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-3"><a href="#2-3" class="headerlink" title="2.3"></a>2.3</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    name = <span class="string">&#x27;job&#x27;</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;Hello <span class="subst">&#123;name&#125;</span>, would you like to learn some Python today?&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-4"><a href="#2-4" class="headerlink" title="2.4"></a>2.4</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    name = <span class="string">&#x27;job&#x27;</span></span><br><span class="line">    <span class="built_in">print</span>(name.lower())</span><br><span class="line">    <span class="built_in">print</span>(name.upper())</span><br><span class="line">    <span class="built_in">print</span>(name.title())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-5"><a href="#2-5" class="headerlink" title="2.5"></a>2.5</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;Albert Einstein once said, “A person who never made a mistake never tried anything new.”&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="2-6"><a href="#2-6" class="headerlink" title="2.6"></a>2.6</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    famous_person=<span class="string">&quot;Albert Einstein&quot;</span></span><br><span class="line">    message=<span class="string">f&#x27;<span class="subst">&#123;famous_person&#125;</span> once said, “A person who never made a mistake never tried anything new.”&#x27;</span></span><br><span class="line">    <span class="built_in">print</span>(message)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="2-7"><a href="#2-7" class="headerlink" title="2.7"></a>2.7</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    name = <span class="string">&quot;\tEric Matthes\n&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Unmodified:&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(name)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\nUsing lstrip():&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(name.lstrip())</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\nUsing rstrip():&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(name.rstrip())</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\nUsing strip():&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(name.strip())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-8"><a href="#2-8" class="headerlink" title="2.8"></a>2.8</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">5</span> + <span class="number">3</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">10</span> - <span class="number">2</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">1</span> * <span class="number">8</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">int</span>(<span class="number">16</span> / <span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-9"><a href="#2-9" class="headerlink" title="2.9"></a>2.9</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    num = <span class="number">6</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;my favorite number is &quot;</span> + <span class="built_in">str</span>(num))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
 	
 		</div>
 		
-		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+		<div id="current-post-cover" data-scr="/../../public/img/2.png"></div>
 
 		<!-- relate post, comment...-->
 		<div class="investment-container">
@@ -382,12 +348,8 @@
 	<span>
 		<a id="totop-post-page">To Top</a>
 		
-			<a href="/2021/04/23/%E7%AC%AC%E4%BA%8C%E7%AB%A0%E7%AD%94%E6%A1%88/" title="第二章答案" rel="prev">
-				&laquo;Pre post
-			</a>
 		
-		
-			<a href="/2021/04/21/hello-world/" title="Hello World" rel="next">
+			<a href="/2021/04/21/%E2%80%9C%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E2%80%9D/" title="“边缘计算”" rel="next">
 				Next post&raquo;
 			</a>
 			
@@ -408,26 +370,44 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2021/04/23/%E7%AC%AC%E4%BA%8C%E7%AB%A0%E7%AD%94%E6%A1%88/" title="第二章答案">
-								第二章答案			
+							<a class="relate-post-title" href="/2021/04/21/%E2%80%9C%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E2%80%9D/" title="“边缘计算”">
+								“边缘计算”			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
-								四月 23日, 2021				
+								四月 21日, 2021				
 							</p>
 							<p class="relate-post-content">
-								2.1123if __name__ == &#x27;__main__&#x27;:    msg = &quot;hello&quot;    print(msg)
+								任务调度和容错相关工作总结
+
+
+任务调度
+任务调度
+任务粒度
+容错
 
 
 
-2.212345if __name__ == &#x27;_...
+OnDisc算法，Dedas算法，SDTO算法,Min-Min算法
+有
+独立任务
+无
+
+
+HEFT算法，TDCA算法，ITAGS算法
+有
+DAG
+无
+
+
+S G...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2021/04/23/%E7%AC%AC%E4%BA%8C%E7%AB%A0%E7%AD%94%E6%A1%88/" title="第二章答案">				
+							<a href="/2021/04/21/%E2%80%9C%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E2%80%9D/" title="“边缘计算”">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="../../public/img/2.png" alt="第二章答案"/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="“边缘计算”"/>
 							</a>
 						</div>
 					</li>												
